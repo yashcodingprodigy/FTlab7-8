@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="customerForm">
+    <form id="customerForm">
+        <h2>Customer Information</h2>
+        
+        <label>First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label>Middle Name:</label>
+        <input type="text" id="middleName">
+
+        <label>Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dateOfBirth" required>
+
+        <h3>Contact Information</h3>
+        <label>Contact Type:</label>
+        <select id="contactType">
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+        </select>
+        <label>Contact Value:</label>
+        <input type="text" id="contactValue" required>
+
+        <h3>Identification</h3>
+        <label>ID Type:</label>
+        <input type="text" id="idType" required>
+
+        <label>ID Number:</label>
+        <input type="text" id="idNumber" required>
+
+        <label>Issued Date:</label>
+        <input type="date" id="issuedDate" required>
+
+        <label>Expiry Date:</label>
+        <input type="date" id="expiryDate" required>
+        
+        <h3>Proof of ID</h3>
+        <label>Document Type:</label>
+        <input type="text" id="documentType" required>
+
+        <label>Document Number:</label>
+        <input type="text" id="documentNumber" required>
+
+        <label>Issued Date:</label>
+        <input type="date" id="docIssuedDate" required>
+
+        <label>Expiry Date:</label>
+        <input type="date" id="docExpiryDate" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+
+        <button type="button" onclick="location.href='navigate.html'">Navigation Menu</button>
+    </form>
+    </div>
+    <script src="submitForm.js"></script>
+</body>
+</html>
